@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Current Chapter",
+            "cargo": {
+                "args": [
+                    "build",
+                    // SPOT 1: The name of the binary (usually the same as the folder)
+                    "--bin=errors",
+                    "--package=errors"
+                ],
+                // SPOT 2: Where the Cargo.toml lives for this specific chapter
+                "cwd": "${workspaceFolder}/errors"
+            },
+            "args": [],
+            // SPOT 3: The working directory for the running app
+            "cwd": "${workspaceFolder}/errors"
+        }
+    ]
+}
