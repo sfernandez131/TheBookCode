@@ -1,58 +1,12 @@
-   0.056257200s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint: fingerprint error for iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators)/Check { test: false }/TargetInner { name: "iterators", doc: true, ..: with_path("C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\src\\main.rs", Edition2024) }
-   0.056437000s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\sfern\source\repos\Rust\TheBook\iterators\target\debug\.fingerprint\iterators-19ba3eb2bc31fcfa\bin-iterators`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.077461100s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint: fingerprint error for iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators)/Check { test: true }/TargetInner { name: "iterators", doc: true, ..: with_path("C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\src\\main.rs", Edition2024) }
-   0.077502600s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\sfern\source\repos\Rust\TheBook\iterators\target\debug\.fingerprint\iterators-fd3ee8921f77ca7c\test-bin-iterators`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
+   0.039813500s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\src\\main.rs"
+   0.039900100s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\target\\debug\\.fingerprint\\iterators-19ba3eb2bc31fcfa\\dep-bin-iterators"
+   0.039936900s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13415418541, nanos: 258533600 } < FileTime { seconds: 13415418692, nanos: 952819400 }
+   0.040517300s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint: fingerprint dirty for iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators)/Check { test: false }/TargetInner { name: "iterators", doc: true, ..: with_path("C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\src\\main.rs", Edition2024) }
+   0.040619400s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\target\\debug\\.fingerprint\\iterators-19ba3eb2bc31fcfa\\dep-bin-iterators", reference_mtime: FileTime { seconds: 13415418541, nanos: 258533600 }, stale: "C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\src\\main.rs", stale_mtime: FileTime { seconds: 13415418692, nanos: 952819400 } }))
+   0.042378300s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\src\\main.rs"
+   0.042402500s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\target\\debug\\.fingerprint\\iterators-fd3ee8921f77ca7c\\dep-test-bin-iterators"
+   0.042419800s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13415418541, nanos: 258533600 } < FileTime { seconds: 13415418692, nanos: 952819400 }
+   0.042831800s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint: fingerprint dirty for iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators)/Check { test: true }/TargetInner { name: "iterators", doc: true, ..: with_path("C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\src\\main.rs", Edition2024) }
+   0.042863100s  INFO prepare_target{force=false package_id=iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators) target="iterators"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\target\\debug\\.fingerprint\\iterators-fd3ee8921f77ca7c\\dep-test-bin-iterators", reference_mtime: FileTime { seconds: 13415418541, nanos: 258533600 }, stale: "C:\\Users\\sfern\\source\\repos\\Rust\\TheBook\\iterators\\src\\main.rs", stale_mtime: FileTime { seconds: 13415418692, nanos: 952819400 } }))
     Checking iterators v0.1.0 (C:\Users\sfern\source\repos\Rust\TheBook\iterators)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.23s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.27s
