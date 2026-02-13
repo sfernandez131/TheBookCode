@@ -116,7 +116,6 @@ fn ex6() {
         },
     ];
 
-    let value = String::from("closure called");
     let mut num_sort_ops = 0;
     list.sort_by_key(|r| {
         num_sort_ops += 1;
